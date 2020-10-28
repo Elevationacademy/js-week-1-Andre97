@@ -121,3 +121,11 @@ for(let key of Object.keys(dictionary)){
     for(let word of dictionary[key])
         console.log("     "+word)
 }
+
+
+
+let frontEnd = ['HTML', 'CSS', 'Javascript'];
+let frontEndLangages = frontEnd;
+
+
+//debugger;
