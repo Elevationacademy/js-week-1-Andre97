@@ -327,7 +327,7 @@ const people_info = [
         return age
   }
   const getOrigin = function(person){
-        return `from ${person.city}, ${person.country}.`
+        return `from ${capitalize(person.city)}, ${capitalize(person.country)}.`
   }
   
 
