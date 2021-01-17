@@ -44,7 +44,7 @@ function AddClient(props) {
     <div>
       <h2>ADD CLIENT</h2>
       {fields.map((f) => (
-        <div>
+        <div key={f}>
           <TextField
             key={f}
             label={f}

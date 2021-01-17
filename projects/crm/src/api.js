@@ -1,12 +1,6 @@
 const axios = require('axios')
 
-const promiseHandler = async pr => pr.then(data => {
-    console.log("success")
-    return data.data
-}).catch(error => {
-    console.log("failure",error)
-    return null
-})
+const promiseHandler = async pr => pr.then(data => data.data).catch(error => null)
 
 module.exports = {
     getClients: async () => await promiseHandler(axios.get('http://localhost:3001/clients')),

@@ -34,7 +34,7 @@ function Update(props) {
     <div>
       <h2>UPDATE</h2>
       <Grid container spacing={3}>
-        <Grid item>
+        <Grid item xs={12}>
           <AC
             options={clientsStore.clients.map((c) => `${c.first} ${c.last}`)}
             label="Choose client to update"
@@ -42,7 +42,7 @@ function Update(props) {
             clss={clss.root}
           />
         </Grid>
-        <Grid item>
+        <Grid item xs={12}>
           <AC
             options={ownerStore.owners.map(c => c.owner)}
             label="owner"
@@ -51,7 +51,7 @@ function Update(props) {
           />
           <Button color="primary" onClick={changeOwnerHandler}>Transfer</Button>
         </Grid>
-        <Grid item>
+        <Grid item xs={12}>
           <AC 
             options={emailTypeStore.types.map(e => e.email_type)}
             label="email type"
@@ -60,7 +60,7 @@ function Update(props) {
           />
             <Button color="primary" onClick={transferHandler}>Send email</Button>
         </Grid>
-        <Grid item xs={10}>
+        <Grid item xs={12}>
           <Button color="primary" onClick={declareHandler}>Declare sale</Button>
         </Grid>
       </Grid>

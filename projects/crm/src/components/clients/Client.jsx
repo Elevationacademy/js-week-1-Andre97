@@ -21,9 +21,10 @@ function Client(props) {
     handleClickOpen()
   }
 
+  let co = 109
   return (
     <TableRow className="trow" onClick={handleClick}>
-      {cells.map(c => <StyledTableCell key={c} align="center">{c}</StyledTableCell>)}
+      {cells.map(c => <StyledTableCell key={c || co++} align="center">{c}</StyledTableCell>)}
     </TableRow>
   )
 }

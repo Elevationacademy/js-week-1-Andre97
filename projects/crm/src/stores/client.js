@@ -28,6 +28,7 @@ export class Client {
     }
 
     assingNewValues = (c) => {
+        if(!c) return 
         this.id= c.id
         this.last= c.last
         this.first= c.first

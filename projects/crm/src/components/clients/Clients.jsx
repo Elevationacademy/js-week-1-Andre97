@@ -30,12 +30,7 @@ const StyledTableRow = withStyles((theme) => ({
 function Clients(props) {
   const { clientsStore } = props
   const [openD, setOpenD] = useState(false)
-  const [userToUpdate, setUser] = useState({
-    id: -1,
-    first: "",
-    last: "",
-    country: "",
-  })
+  const [userToUpdate, setUser] = useState({id: -1,first: "",last: "",country: ""})
   const [localClients, setLocalClients] = useState([])
   const [page, setPage] = useState(0)
   const [filter, setFilter] = useState("")
